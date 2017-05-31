@@ -5,9 +5,9 @@ To run -
 1. Navigative to CalabashAutomation folder 
 2. Open CLI
 3. Use the following command to run the test
-calabash-android run app-debug.apk features\Wardarobe.feature
+ - calabash-android run app-debug.apk features\Wardarobe.feature
 4. Installation 
- a. Install ruby and gem  
- b. gem install bundler
- c. gem 'calabash-android'
- d. gem 'cucumber'
+  Install ruby and gem  
+  gem install bundler
+  gem 'calabash-android'
+  gem 'cucumber'
