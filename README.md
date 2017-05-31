@@ -1,6 +1,6 @@
 # Wardarobeapp
 Crowdfire
-I have used calabash to demostrate the automation that can happen on this app. This is not the best apprach but in given time I want to prove that the app can be automated using any automation framework.
+I have used calabash to demostrate the automation that can happen on this app. This is not the best approach but in given time I want to prove that the app can be automated using any automation framework.
 To run - 
 1. Navigative to CalabashAutomation folder 
 2. Open CLI
@@ -13,3 +13,6 @@ To run -
   gem 'cucumber'
 
 5. OR you can use 'bundle install' there is a gem file with all dependencies.
+
+6. The screen objects can be found using the android device monitor that can display the hierarchical tree of the view/xml files and elements can be capture from there. 
+
