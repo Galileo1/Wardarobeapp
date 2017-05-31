@@ -4,5 +4,10 @@ I have used calabash to demostrate the automation that can happen on this app. T
 To run - 
 1. Navigative to CalabashAutomation folder 
 2. Open CLI
-3.Use the following command to run the test..
+3. Use the following command to run the test
 calabash-android run app-debug.apk features\Wardarobe.feature
+4. Installation 
+Install ruby and gem  
+gem install bundler
+gem 'calabash-android'
+gem 'cucumber'
