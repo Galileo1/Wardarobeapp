@@ -11,3 +11,5 @@ To run -
   gem install bundler
   gem 'calabash-android'
   gem 'cucumber'
+
+5. OR you can use 'bundle install' there is a gem file with all dependencies.
