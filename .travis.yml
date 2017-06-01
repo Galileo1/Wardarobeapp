@@ -12,8 +12,10 @@ android:
     - android-22
     - sys-img-armeabi-v7a-android-22
 # whitelist
+before-install:  
+  - rvm install 2.2.0
 branches:
-    - travis-ci-branch
+  - travis-ci-branch
 before_script:
   - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
   - gem update --system 2.5.1
