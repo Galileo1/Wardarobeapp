@@ -14,7 +14,7 @@ android:
 # whitelist
 branches:
     - travis-ci-branch
-before_script: cd CalabashAutomation
+before_script:
   - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
   - gem update --system 2.5.1
   - gem install calabash-android
@@ -26,4 +26,4 @@ script:
   - adb start-server
   - adb devices
   - adb install -r app-debug.apk
-  - calabash-android run app-debug.apk features/Wardarobe.feature
+  - calabash-android run CalabashAutomation/app-debug.apk CalabashAutomation/features/Wardarobe.feature
