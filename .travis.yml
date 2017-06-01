@@ -1,9 +1,7 @@
 sudo: false 
 language: android
-ruby:
-  - "2.2.0"
-#before_install:  
-# - rvm install ruby --latest
+before_install:  
+ - rvm install ruby --latest
 env: 
   global: 
   # wait up to 10 minutes for adb to connect to emulator
@@ -20,7 +18,7 @@ branches:
   - travis-ci-branch
 before_script:
   - echo no | android create avd --force -n test -t android-22 --abi armeabi-v7a
-  - gem update --system 2.5.1
+   #- gem update --system 2.5.1
   - gem install calabash-android
   - gem install cucumber
   - emulator -avd test -no-skin -no-audio -no-window &
