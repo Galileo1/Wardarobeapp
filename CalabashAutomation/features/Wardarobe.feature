@@ -15,3 +15,17 @@ Scenario: User can select favourite combination
   And use selects the favourite button
   And navigates to favourite screen  
   Then they should be able to see items
+
+# Scenario: User can browser through the different wardarobe collection
+#   When user navigates to option menu
+#   And user selects to navigate to home screen 
+#   Then user can browser through the wardrobe collection 
+
+
+# Scenario: User can add more wardrobe to their collection
+#   When user navigates to option menu
+#   And user selects to navigate to home screen 
+#   And user chooses to add clothes to list
+#   And user chooses to add upper garment using camera feed
+  
+

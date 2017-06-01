@@ -51,6 +51,5 @@ end
 Then(/^they should be able to see items$/) do
   element_exists(CommonPageElement::DELETE_BUTTON)
   element_exists(CommonPageElement::UPPER_GARMENT)
-  element_exists(CommonPageElement::LOWER_GARMENT)
-  
+  element_exists(CommonPageElement::LOWER_GARMENT)  
 end
