@@ -1,5 +1,7 @@
 sudo: false 
 language: android
+before-install:  
+ - rvm install ruby --latest
 env: 
   global: 
   # wait up to 10 minutes for adb to connect to emulator
@@ -12,8 +14,6 @@ android:
     - android-22
     - sys-img-armeabi-v7a-android-22
 # whitelist
-before-install:  
-  - rvm install 2.2.0
 branches:
   - travis-ci-branch
 before_script:
