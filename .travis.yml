@@ -1,7 +1,9 @@
 sudo: false 
 language: android
-before-install:  
- - rvm install ruby --latest
+ruby:
+  - "2.2.0"
+#before_install:  
+# - rvm install ruby --latest
 env: 
   global: 
   # wait up to 10 minutes for adb to connect to emulator
