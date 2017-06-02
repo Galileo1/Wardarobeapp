@@ -1,11 +1,11 @@
 sudo: false 
 language: android
-before_install:  
+before_install:  cd CalabashAutomation
  - rvm install ruby --latest
-addons:
-  apt:
-    packages:
-      - oracle-java8-set-default
+# addons:
+#   apt:
+#     packages:
+#       - oracle-java8-set-default
 env: 
   global: 
   # wait up to 10 minutes for adb to connect to emulator
@@ -31,6 +31,6 @@ script:
   - adb kill-server
   - adb start-server
   - adb devices
-  - adb install -r CalabashAutomation/app-debug.apk
-  - calabash-android resign CalabashAutomation/app-debug.apk --verbose
-  - calabash-android run CalabashAutomation/app-debug.apk CalabashAutomation/features/Wardarobe.feature
+  #- adb install -r CalabashAutomation/app-debug.apk
+  - calabash-android resign app-debug.apk --verbose
+  - calabash-android run app-debug.apk features/Wardarobe.feature
