@@ -33,5 +33,5 @@ script:
   - adb start-server
   - adb devices
   #- adb install -r CalabashAutomation/app-debug.apk
-  - calabash-android resign app-debug.apk --verbose
+  # - calabash-android resign app-debug.apk --verbose
   - calabash-android run app-debug.apk features/Wardarobe.feature
