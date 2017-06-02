@@ -1,7 +1,8 @@
 sudo: false 
 language: android
-before_install:  cd CalabashAutomation
+before_install:  
  - rvm install ruby --latest
+ cd CalabashAutomation 
 # addons:
 #   apt:
 #     packages:
