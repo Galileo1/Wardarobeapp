@@ -2,6 +2,10 @@ sudo: false
 language: android
 before_install:  
  - rvm install ruby --latest
+addons:
+  apt:
+    packages:
+      - oracle-java8-set-default
 env: 
   global: 
   # wait up to 10 minutes for adb to connect to emulator
