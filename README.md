@@ -13,3 +13,5 @@ To run -
   gem 'cucumber'
 
 5. OR you can use 'bundle install' there is a gem file with all dependencies.
+
+Test Results can be seen here- https://travis-ci.org/Galileo1/Wardarobeapp/builds/238616554
